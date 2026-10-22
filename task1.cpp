@@ -32,7 +32,7 @@ int main()
     int arr[] = {12,15,18,21,25,30,34,41};
     int size_of_arry = sizeof(arr)/sizeof(arr[0]);
     // sort in acending order
-    for(int i = 0; i < size_of_arry; i++)
+    for(int i = 0; i < size_of_arry; i++)  // if the array is not sorted
     {
         int smallest = arr[0];
         for(int j = i + 1; j < size_of_arry; j++)
@@ -45,6 +45,12 @@ int main()
             }
         }
     }
+    cout<<"Sorted : [ ";
+    for(int k : arr)
+    {
+        cout<<k<<" ";
+    }
+    cout<<" ]"<<endl;
     int value;
     cout << "Enter the number you want to search for: ";
     cin >> value;
