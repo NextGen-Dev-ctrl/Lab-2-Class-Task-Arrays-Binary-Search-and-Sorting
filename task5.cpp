@@ -30,11 +30,11 @@ int main() {
     cout << "Sorted: ";
     for (int i = 0; i < size; i++) 
     {
-        std::cout << arr[i] << " ";
+        cout << arr[i] << " ";
     }
-    cout << std::endl;
+    cout << endl;
     
-    cout << "Shifts: " << totalShifts << std::endl;
+    cout << "Shifts: " << totalShifts << endl;
     
     return 0;
 }
